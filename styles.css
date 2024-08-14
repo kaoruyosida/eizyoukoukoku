@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     position: relative;
     background-image: url('images/PXL_デスクトップ用20240612_2312114733.MP.jpg');
@@ -100,3 +101,185 @@ footer a:hover {
     margin: 0; /* マージンをリセット */
     padding-right: 4em; /* 右端の余白を4文字分に設定 */
 }
+=======
+body {
+    position: relative;
+    background-image: url('images/PXL_デスクトップ用20240612_2312114733.MP.jpg');
+    background-size: cover; /* 背景画像を全体に広げる */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: #f5f5f5; /* 明るいグレーに設定 */
+    min-height: 100vh; /* ビューポートの高さに合わせて最小の高さを設定 */
+    display: flex;
+    flex-direction: column;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 半透明の黒いオーバーレイ */
+    z-index: -1; /* 背景の下に配置 */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative; /* ヘッダー内の絶対位置設定の基準 */
+}
+
+header .logo img {
+    width: 5%; /* ロゴの幅設定 */
+    height: auto; /* 高さは自動で調整 */
+    position: fixed; /* 固定位置 */
+    bottom: 10px; /* 画面の下から10px */
+    right: 10px; /* 画面の右から10px */
+    z-index: 1000; /* 他の要素より前面に表示 */
+}
+
+h1, h2, h3, p {
+    text-align: center; /* 文字を中央に配置 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 文字に影を付ける */
+}
+
+section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px; /* セクションの最大幅を設定 */
+    flex: 1; /* セクションが可変の高さを持つように設定 */
+}
+
+.main-visual {
+    padding: 50px;
+}
+
+footer {
+    text-align: center; /* フッターの文字も中央に配置 */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明の黒い背景色 */
+    color: white; /* テキストの色を白に設定 */
+    position: relative; /* フッターの相対位置設定 */
+    margin-top: auto; /* フッターをページの下部に配置 */
+    z-index: 10; /* 背景の上に表示 */
+}
+
+footer a {
+    color: #007BFF; /* リンクの色を青に設定 */
+    text-decoration: none; /* リンクの下線を削除 */
+}
+
+footer a:hover {
+    text-decoration: underline; /* リンクにホバー時の下線を追加 */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center; /* 水平方向に中央揃え */
+    justify-content: center; /* 垂直方向に中央揃え */
+    height: 100vh; /* ビューポートの高さに合わせる */
+    text-align: center; /* テキストを中央に配置 */
+}
+
+.contact-info .large-text {
+    font-size: 4.5em; /* フォントサイズを調整 */
+    font-weight: bold; /* 太字に設定 */
+    font-family: 'Kaushan Script', cursive; /* 行書体フォントに設定 */
+    margin: 0; /* マージンをリセット */
+    padding: 10px 0; /* 上下のパディングを設定 */
+    color: #4CAF50; /* 緑色に設定 */
+    padding-right: 2em; /* 右端の余白を2文字分に設定 */
+}
+
+.contact-info p {
+    font-size: 1.5em; /* フォントサイズを調整 */
+    margin: 0; /* マージンをリセット */
+    padding-right: 4em; /* 右端の余白を4文字分に設定 */
+}
+
+/* スマホ用のスタイル */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* 基本フォントサイズを小さくする */
+    }
+    
+    .header .logo img {
+        width: 10%; /* ロゴの幅を大きくする */
+    }
+
+    .contact-info .large-text {
+        font-size: 3em; /* フォントサイズを小さくする */
+        padding-right: 1em; /* 右端の余白を小さくする */
+    }
+
+    .contact-info p {
+        font-size: 1.2em; /* フォントサイズを小さくする */
+        padding-right: 2em; /* 右端の余白を小さくする */
+    }
+
+    .main-visual {
+        padding: 20px; /* パディングを小さくする */
+    }
+
+    .services, .strengths, .team, .examples {
+        padding: 10px; /* パディングを小さくする */
+    }
+
+    .service-item, .strength-item, .team-item, .example-item {
+        margin-bottom: 20px; /* アイテムの間隔を小さくする */
+    }
+
+    footer {
+        font-size: 0.9em; /* フッターのフォントサイズを小さくする */
+    }
+
+    footer p {
+        margin-bottom: 5px; /* フッター内のパラグラフ間のスペースを小さくする */
+    }
+}
+
+/* タブレット用のスタイル（600px以上、900px以下） */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 16px; /* 基本フォントサイズを調整 */
+    }
+
+    .header .logo img {
+        width: 7%; /* ロゴの幅を調整 */
+    }
+
+    .contact-info .large-text {
+        font-size: 4em; /* フォントサイズを調整 */
+        padding-right: 1.5em; /* 右端の余白を調整 */
+    }
+
+    .contact-info p {
+        font-size: 1.3em; /* フォントサイズを調整 */
+        padding-right: 3em; /* 右端の余白を調整 */
+    }
+
+    .main-visual {
+        padding: 30px; /* パディングを調整 */
+    }
+
+    .services, .strengths, .team, .examples {
+        padding: 15px; /* パディングを調整 */
+    }
+
+    .service-item, .strength-item, .team-item, .example-item {
+        margin-bottom: 25px; /* アイテムの間隔を調整 */
+    }
+
+    footer {
+        font-size: 1em; /* フッターのフォントサイズを調整 */
+    }
+}
+>>>>>>> 150bdeb (Add responsive CSS for mobile and tablet views)
