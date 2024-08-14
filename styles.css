@@ -107,12 +107,18 @@ footer a:hover {
         font-size: 14px; /* 基本フォントサイズを小さくする */
     }
     
-    .header .logo img {
-        width: 10%; /* ロゴの幅を大きくする */
+    .logo img {
+        width: 30%; /* ロゴの幅を調整 */
+        bottom: 5px; /* 画面の下からの距離を調整 */
+        right: 5px; /* 画面の右からの距離を調整 */
+    }
+
+    .contact-info {
+        font-size: 1em; /* フォントサイズを調整 */
     }
 
     .contact-info .large-text {
-        font-size: 3em; /* フォントサイズを小さくする */
+        font-size: 2.5em; /* フォントサイズを調整 */
         padding-right: 1em; /* 右端の余白を小さくする */
     }
 
@@ -126,19 +132,12 @@ footer a:hover {
     }
 
     .services, .strengths, .team, .examples {
-        padding: 10px; /* パディングを小さくする */
+        padding: 10px; /* セクションのパディングを調整 */
+        max-width: 100%; /* 最大幅を100%に設定 */
     }
 
     .service-item, .strength-item, .team-item, .example-item {
-        margin-bottom: 20px; /* アイテムの間隔を小さくする */
-    }
-
-    footer {
-        font-size: 0.9em; /* フッターのフォントサイズを小さくする */
-    }
-
-    footer p {
-        margin-bottom: 5px; /* フッター内のパラグラフ間のスペースを小さくする */
+        margin: 10px 0; /* アイテム間のマージンを調整 */
     }
 }
 
@@ -148,7 +147,7 @@ footer a:hover {
         font-size: 16px; /* 基本フォントサイズを調整 */
     }
 
-    .header .logo img {
+    .logo img {
         width: 7%; /* ロゴの幅を調整 */
     }
 
@@ -176,34 +175,5 @@ footer a:hover {
 
     footer {
         font-size: 1em; /* フッターのフォントサイズを調整 */
-    }
-}
-/* スマホ用のスタイル */
-@media only screen and (max-width: 600px) {
-    .logo img {
-        width: 30%; /* ロゴの幅を調整 */
-        bottom: 5px; /* 画面の下からの距離を調整 */
-        right: 5px; /* 画面の右からの距離を調整 */
-    }
-
-    .contact-info {
-        font-size: 1em; /* フォントサイズを調整 */
-    }
-
-    .contact-info .large-text {
-        font-size: 2.5em; /* フォントサイズを調整 */
-    }
-
-    .main-visual h1 {
-        font-size: 1.5em; /* 見出しのフォントサイズを調整 */
-    }
-
-    .services, .strengths, .team, .examples {
-        padding: 10px; /* セクションのパディングを調整 */
-        max-width: 100%; /* 最大幅を100%に設定 */
-    }
-
-    .service-item, .strength-item, .team-item, .example-item {
-        margin: 10px 0; /* アイテム間のマージンを調整 */
     }
 }
